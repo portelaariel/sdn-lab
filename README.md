@@ -129,4 +129,4 @@ Ctrl+C          # Encerrar o Ryu
 
 ---
 
-👨‍💻 Projeto para estudos de captura de pacotes e uso de Ryu como controlador SDN com exportação de dados para CSV.
+Projeto para estudos de captura de pacotes e uso de Ryu como controlador SDN com exportação de dados para CSV.
