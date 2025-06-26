@@ -13,7 +13,7 @@
 
 ---
 
-## 🔧 Instalação do Mininet e Ferramentas de Captura
+## Instalação do Mininet e Ferramentas de Captura
 
 ```bash
 sudo apt update
@@ -27,7 +27,7 @@ sudo ./util/install.sh -a
 
 ---
 
-## 🐍 Instalar Python 3.9 + Criar Ambiente Virtual
+## Instalar Python 3.9 + Criar Ambiente Virtual
 
 ```bash
 sudo apt install python3.9 python3.9-venv python3.9-dev -y
@@ -39,7 +39,7 @@ source ryu39-env/bin/activate
 
 ---
 
-## 📦 Instalar Dependências do Ryu
+## Instalar Dependências do Ryu
 
 ```bash
 pip install setuptools==58.2.0
@@ -49,7 +49,7 @@ pip install git+https://github.com/faucetsdn/ryu.git
 
 ---
 
-## ▶️ Executar o Controlador Ryu com Captura para CSV
+## Executar o Controlador Ryu com Captura para CSV
 
 1. Salve o script `sniffer_ryu.py` em:
 
@@ -77,7 +77,7 @@ sudo mn --controller=remote --switch ovsk,protocols=OpenFlow13 --topo=single,2
 mininet> h1 ping -c 5 h2
 ```
 
-📄 O log será salvo em:
+O log será salvo em:
 
 ```
 ~/sdn-lab/logs/pacotes.csv
@@ -85,7 +85,7 @@ mininet> h1 ping -c 5 h2
 
 ---
 
-## 📡 Alternativa: Captura com `tcpdump` e `tshark`
+## Alternativa: Captura com `tcpdump` e `tshark`
 
 ### Dentro do Mininet:
 
@@ -110,7 +110,7 @@ tshark -r h1.pcap -T fields -e frame.time -e ip.src -e ip.dst -e ip.len \
 
 ---
 
-## 📊 Diferenças entre Métodos de Captura
+## Diferenças entre Métodos de Captura
 
 | Método             | Tipo     | Vantagens                                           |
 |--------------------|----------|-----------------------------------------------------|
@@ -119,7 +119,7 @@ tshark -r h1.pcap -T fields -e frame.time -e ip.src -e ip.dst -e ip.len \
 
 ---
 
-## 🧹 Comandos Úteis
+## Comandos Úteis
 
 ```bash
 sudo mn -c      # Limpar rede anterior
