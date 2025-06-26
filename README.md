@@ -1,7 +1,7 @@
 
 # Ryu + Mininet Packet Sniffer com Exportação para CSV
 
-## 📁 Estrutura de Diretórios Recomendada
+## Estrutura de Diretórios Recomendada
 
 ```
 ~/sdn-lab/
